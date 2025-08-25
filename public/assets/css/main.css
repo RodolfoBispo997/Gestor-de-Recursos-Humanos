@@ -21,3 +21,21 @@ body {
     background-color: #333;
     color: #fff;
 }
+
+/* Corrige o alinhamento do "entries per page" */
+.dataTables_length {
+    margin-bottom: 10px; /* dá um respiro embaixo */
+}
+
+.dataTables_length label {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px; /* espaço entre select e texto */
+    font-size: 14px;
+}
+
+.dataTables_length select {
+    margin: 0 5px;
+    padding: 3px 6px;
+    height: auto;
+}

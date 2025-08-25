@@ -25,5 +25,15 @@ class AppServiceProvider extends ServiceProvider
             //auth()->user() Faz parte da sessão do Usuário quando faz o Login
             return auth()->user()->role === 'admin';
         });
+
+        Gate::define('rh', function(){
+            //auth()->user() Faz parte da sessão do Usuário quando faz o Login
+            return auth()->user()->role === 'rh';
+        });
+
+        Gate::define('colaborator', function(){
+            //auth()->user() Faz parte da sessão do Usuário quando faz o Login
+            return auth()->user()->role === 'colaborator';
+        });
     }
 }

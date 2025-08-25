@@ -13,6 +13,15 @@
     <link rel="stylesheet" href="{{asset('assets/datatables/datatables.min.css')}}">  
     <!-- custom -->
     <link rel="stylesheet" href="{{asset('assets/css/main.css')}}"> 
+
+    {{-- <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="{{ asset('assets/bootstrap/bootstrap.min.css') }}">
+
+<!-- DataTables + Bootstrap 5 CSS -->
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css">
+
+<!-- Seu CSS customizado -->
+<link rel="stylesheet" href="{{ asset('assets/css/main.css') }}"> --}}
 </head>
 
 <body>
@@ -24,7 +33,22 @@
         {{$slot}}
     </div>
 
+    {{-- <script src="{{asset('assets/datatables/jquery.min.js')}}"></script>
+    <script src="{{asset('assets/bootstrap/bootstrap.bundle.min.js')}}"></script>
     <script src="{{asset('assets/datatables/datatables.min.js')}}"></script>
+    <script src="{{asset('js/main.js')}}"></script> --}}
+    <!-- jQuery -->
+    <script src="{{ asset('assets/datatables/jquery.min.js') }}"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="{{ asset('assets/bootstrap/bootstrap.bundle.min.js') }}"></script>
+
+    <!-- DataTables + Bootstrap 5 JS -->
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+
+    <!-- Seu JS customizado -->
+    <script src="{{ asset('js/main.js') }}"></script>
 
 </body>
 
